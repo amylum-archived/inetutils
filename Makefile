@@ -5,7 +5,7 @@ BUILD_DIR = /tmp/$(PACKAGE)-build
 RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
 PATH_FLAGS = --prefix=/usr --libexec=/usr/bin --localstatedir=/var --sysconfdir=/etc
-CONF_FLAGS = --without-wrap --enable-telnet --enable-hostname --enable-dnsdomainname --disable-rexec --disable-rexecd --disable-tftp --disable-tftpd --disable-ping --disable-ping6 --disable-logger --disable-syslogd --disable-inetd --disable-whois --disable-uucpd --disable-ifconfig --disable-traceroute --disable-rlogin --disable-rcp
+CONF_FLAGS = --without-wrap --enable-telnet --enable-hostname --enable-dnsdomainname --disable-rexec --disable-rexecd --disable-tftp --disable-tftpd --disable-ping --disable-ping6 --disable-logger --disable-syslogd --disable-inetd --disable-whois --disable-uucpd --disable-ifconfig --disable-traceroute --disable-rlogin --disable-rcp --disable-rsh --disable-rshd
 
 PACKAGE_VERSION = $$(git --git-dir=upstream/.git describe --tags | sed 's/inetutils-//;s/_/./g')
 PATCH_VERSION = $$(cat version)
