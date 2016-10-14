@@ -1,0 +1,45 @@
+name 'inetutils'
+org 'amylum'
+
+licenses 'COPYING'
+
+configure_flags(
+  prefix: '/usr',
+  libexecdir: '/usr/bin',
+  localstatedir: '/var',
+  sysconfdir: '/etc',
+  'without-wrap': nil,
+  'enable-telnet': nil,
+  'enable-hostname': nil,
+  'enable-dnsdomainname': nil,
+  'disable-rexec': nil,
+  'disable-rexecd': nil,
+  'disable-tftp': nil,
+  'disable-tftpd': nil,
+  'disable-ping': nil,
+  'disable-ping6': nil,
+  'disable-logger': nil,
+  'disable-syslogd': nil,
+  'disable-inetd': nil,
+  'disable-whois': nil,
+  'disable-uucpd': nil,
+  'disable-ifconfig': nil,
+  'disable-traceroute': nil,
+  'disable-rlogin': nil,
+  'disable-rcp': nil,
+  'disable-rsh': nil,
+  'disable-rshd': nil
+)
+
+harden
+
+build do
+  run './bootstrap'
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end
