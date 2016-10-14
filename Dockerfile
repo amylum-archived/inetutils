@@ -1,3 +1,2 @@
-FROM dock0/build
-MAINTAINER akerl <me@lesaker.org>
+FROM dock0/pkgforge
 RUN pacman -S --needed --noconfirm help2man
