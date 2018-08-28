@@ -1,7 +1,7 @@
 inetutils
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/inetutils/master.svg)](https://circleci.com/gh/amylum/inetutils)
+[![Build Status](https://img.shields.io/travis/com/amylum/inetutils.svg)](https://travis-ci.com/amylum/inetutils)
 [![GitHub release](https://img.shields.io/github/release/amylum/inetutils.svg)](https://github.com/amylum/inetutils/releases)
 [![GPL3 Licensed](http://img.shields.io/badge/license-GPL3-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
 
